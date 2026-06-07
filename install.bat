@@ -48,11 +48,14 @@ echo ============================================================
 echo Installation Complete!
 echo ============================================================
 echo.
-echo You can now run exercises:
-echo   run_exercise.bat 1    - Exercise 1: Gradio Intro
-echo   run_exercise.bat 2    - Exercise 2: Inputs/Outputs
-echo   run_exercise.bat 3    - Exercise 3: Simple Chatbot
-echo   run_exercise.bat 4    - Exercise 4: Advanced Chatbot
-echo   run_exercise.bat 5    - Exercise 5: Multi-Turn Chat
+echo You can now run exercises from the terminal:
+echo.
+echo   python 1_gradio_intro.py
+echo   python 2_gradio_inputs_outputs.py
+echo   python 3_simple_chatbot.py
+echo   python 4_advanced_chatbot.py
+echo   python 5_multi_turn_chat.py
+echo.
+echo Then open your browser to: http://localhost:7860
 echo.
 pause

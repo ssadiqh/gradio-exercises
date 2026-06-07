@@ -30,60 +30,45 @@ curl http://localhost:11434/api/generate -d '{"model":"qwen2.5:7b","prompt":"hel
 
 ## Quick Start
 
-### 1. Create Virtual Environment
+### 1. Setup (One Time)
 
 **Windows:**
-```bash
-python -m venv .venv
-.venv\Scripts\activate
+```powershell
+cd "C:\Ai Projects\gradio-exercises"
+.\install.bat
 ```
 
 **macOS/Linux:**
 ```bash
+cd gradio-exercises
 python -m venv .venv
 source .venv/bin/activate
-```
-
-### 2. Install Dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
-This installs:
+This creates a virtual environment and installs:
 - **gradio** - Web interface framework
 - **langchain** - LLM orchestration
 - **langchain-ollama** - Local LLM integration
 - **pydantic** - Data validation
 
-### 3. Run Exercises
+### 2. Run Exercises
 
-Make sure Ollama is running first:
+Make sure Ollama is running:
 ```bash
 ollama serve
 ```
 
-Then run exercises in order:
-
+Then run any exercise:
 ```bash
-# Exercise 1: Introduction to Gradio
 python 1_gradio_intro.py
-
-# Exercise 2: Inputs and Outputs
 python 2_gradio_inputs_outputs.py
-
-# Exercise 3: Simple Chatbot
 python 3_simple_chatbot.py
-
-# Exercise 4: Advanced Chatbot with System Prompts
 python 4_advanced_chatbot.py
-
-# Exercise 5: Multi-Turn Conversation
 python 5_multi_turn_chat.py
 ```
 
-After running any exercise, open your browser to:
-**http://localhost:7860**
+Open your browser to: **http://localhost:7860**
 
 ## Exercises Overview
 

@@ -20,29 +20,26 @@ pip install -r requirements.txt
 
 This creates a virtual environment and installs all dependencies.
 
-## Step 2: Run From VS Code (Easiest!)
+## Step 2: Run From VS Code
 
 1. **Open the project in VS Code**
    ```
    File → Open Folder → Select gradio-exercises
    ```
 
-2. **Wait for VS Code to recognize the venv** (first time takes 10 seconds)
+2. **Open terminal in VS Code**
+   ```
+   Ctrl+` (backtick)
+   ```
 
-3. **Run any exercise:**
-   - Press `Ctrl+Shift+D` to open Debug/Run menu
-   - Select the exercise you want (e.g., "Exercise 4: Advanced Chatbot")
-   - Press `F5` or click the Play button
+3. **Run any exercise from the terminal**
+   ```powershell
+   python 4_advanced_chatbot.py
+   ```
 
 4. **Open your browser:** http://localhost:7860
 
-## Step 3: Or Run From Terminal
-
-```bash
-python 4_advanced_chatbot.py
-```
-
-Then open: http://localhost:7860
+The virtual environment is automatically detected and used by VS Code.
 
 ## Exercises at a Glance
 
