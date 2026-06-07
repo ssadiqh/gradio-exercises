@@ -237,19 +237,19 @@ if __name__ == "__main__":
     print("=" * 60)
     print("Multi-Turn Conversational Chatbot with Gradio")
     print("=" * 60)
-    print("\n📋 Features:")
-    print("  ✓ Conversation memory (remembers previous messages)")
-    print("  ✓ Context-aware responses")
-    print("  ✓ Multi-turn dialogue")
-    print("  ✓ Clear history button")
+    print("\nFeatures:")
+    print("  * Conversation memory (remembers previous messages)")
+    print("  * Context-aware responses")
+    print("  * Multi-turn dialogue")
+    print("  * Clear history button")
     print("\n" + "=" * 60)
 
     # Choose interface style
     if len(sys.argv) > 1 and sys.argv[1] == "custom":
-        print("\n🚀 Launching Custom Interface...")
+        print("\n[LAUNCH] Launching Custom Interface...")
         demo = create_custom_interface()
     else:
-        print("\n🚀 Launching ChatInterface...")
+        print("\n[LAUNCH] Launching ChatInterface...")
         demo = create_chat_interface()
 
     demo.launch(server_name="127.0.0.1", server_port=7860)

@@ -129,10 +129,10 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "analyzer":
         # Run text analyzer demo
         demo = demo_text_analyzer()
-        print("🚀 Launching Text Analyzer Demo...")
+        print("[LAUNCH] Launching Text Analyzer Demo...")
     else:
         # Run story builder demo (default)
         demo = demo_story_builder()
-        print("🚀 Launching Story Builder Demo...")
+        print("[LAUNCH] Launching Story Builder Demo...")
 
     demo.launch(server_name="127.0.0.1", server_port=7860)

@@ -67,10 +67,10 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "joiner":
         # Run sentence joiner demo
         demo = demo_sentence_joiner()
-        print("🚀 Launching Sentence Joiner Demo...")
+        print("[LAUNCH] Launching Sentence Joiner Demo...")
     else:
         # Run sum calculator demo (default)
         demo = demo_sum_calculator()
-        print("🚀 Launching Sum Calculator Demo...")
+        print("[LAUNCH] Launching Sum Calculator Demo...")
 
     demo.launch(server_name="127.0.0.1", server_port=7860)

@@ -24,10 +24,10 @@ def initialize_model():
             base_url="http://localhost:11434",
             temperature=0.5,
         )
-        print("✅ Ollama model initialized successfully")
+        print("[OK] Ollama model initialized successfully")
         return llm
     except Exception as e:
-        print(f"❌ Error initializing model: {e}")
+        print(f"[ERROR] Error initializing model: {e}")
         print("Make sure Ollama is running: ollama serve")
         return None
 
@@ -86,7 +86,6 @@ def create_chatbot_interface():
             ["Explain quantum computing in simple terms"],
             ["What are the benefits of AI?"],
         ],
-        allow_flagging="never",
     )
     return demo
 
@@ -98,7 +97,7 @@ if __name__ == "__main__":
     print("=" * 60)
     print("Local Ollama Chatbot with Gradio")
     print("=" * 60)
-    print("\n📋 Prerequisites:")
+    print("\nPrerequisites:")
     print("  1. Ollama installed from https://ollama.ai")
     print("  2. Model downloaded: ollama pull qwen2.5:7b")
     print("  3. Ollama running: ollama serve (in another terminal)")

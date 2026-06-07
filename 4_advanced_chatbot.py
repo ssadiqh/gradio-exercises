@@ -170,7 +170,6 @@ def create_advanced_interface():
                 256,
             ],
         ],
-        allow_flagging="never",
     )
     return demo
 
@@ -182,12 +181,12 @@ if __name__ == "__main__":
     print("=" * 60)
     print("Advanced Local Ollama Chatbot with Gradio")
     print("=" * 60)
-    print("\n📋 Features:")
-    print("  ✓ Multiple chatbot roles/personas")
-    print("  ✓ Temperature control (creativity)")
-    print("  ✓ Max token control (response length)")
-    print("  ✓ System prompt engineering")
-    print("  ✓ Error handling")
+    print("\nFeatures:")
+    print("  * Multiple chatbot roles/personas")
+    print("  * Temperature control (creativity)")
+    print("  * Max token control (response length)")
+    print("  * System prompt engineering")
+    print("  * Error handling")
     print("\n" + "=" * 60)
 
     demo = create_advanced_interface()
