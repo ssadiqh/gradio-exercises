@@ -1,79 +1,48 @@
 # Gradio Exercises - Quick Start Guide
 
-Get up and running in 5 minutes! 🚀
+Get up and running in 5 minutes!
 
-## 1️⃣ Prerequisites Check (1 min)
+## Step 1: Setup (One Time)
 
-Make sure you have:
-```bash
-# Check Python version
-python --version  # Should be 3.8+
-
-# Check Ollama is installed
-ollama --version
-
-# Check Qwen model is available
-ollama list  # Should show qwen2.5:7b
-```
-
-If Ollama or Qwen isn't installed:
-```bash
-# Install Ollama from https://ollama.ai
-# Then download the model:
-ollama pull qwen2.5:7b
-```
-
-## 2️⃣ Setup Virtual Environment (1 min)
-
-**Windows:**
-```bash
+**Windows - Run in PowerShell:**
+```powershell
 cd "C:\Ai Projects\gradio-exercises"
-python -m venv .venv
-.venv\Scripts\activate
+.\install.bat
 ```
 
-**macOS/Linux:**
+**macOS/Linux - Run in Terminal:**
 ```bash
-cd ~/path/to/gradio-exercises
+cd gradio-exercises
 python -m venv .venv
 source .venv/bin/activate
-```
-
-## 3️⃣ Install Dependencies (1 min)
-
-```bash
 pip install -r requirements.txt
 ```
 
-## 4️⃣ Start Ollama Server (In Separate Terminal)
+This creates a virtual environment and installs all dependencies.
 
-Keep this running while you work:
+## Step 2: Run From VS Code (Easiest!)
+
+1. **Open the project in VS Code**
+   ```
+   File → Open Folder → Select gradio-exercises
+   ```
+
+2. **Wait for VS Code to recognize the venv** (first time takes 10 seconds)
+
+3. **Run any exercise:**
+   - Press `Ctrl+Shift+D` to open Debug/Run menu
+   - Select the exercise you want (e.g., "Exercise 4: Advanced Chatbot")
+   - Press `F5` or click the Play button
+
+4. **Open your browser:** http://localhost:7860
+
+## Step 3: Or Run From Terminal
+
 ```bash
-ollama serve
+python 4_advanced_chatbot.py
 ```
 
-You should see:
-```
-listening on 127.0.0.1:11434
-```
-
-## 5️⃣ Run Your First Exercise (2 min)
-
-In your original terminal (with `.venv` activated):
-
-```bash
-python 1_gradio_intro.py
-```
-
-You should see:
-```
-🚀 Launching Sum Calculator Demo...
-Running on http://127.0.0.1:7860
-```
-
-**Open your browser to:** http://localhost:7860
-
-Try adding two numbers! 🧮
+Then open: http://localhost:7860
 
 ## Exercises at a Glance
 

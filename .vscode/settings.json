@@ -1,14 +1,13 @@
 {
   "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": false,
+  "python.terminal.executeInFileDir": true,
+  "python.terminal.focusAfterLaunch": true,
+  "python.linting.enabled": false,
   "python.formatting.provider": "none",
   "[python]": {
     "editor.defaultFormatter": null,
     "editor.formatOnSave": false
   },
-  "pylance.analysis.typeCheckingMode": "basic",
-  "pylance.analysis.extraPaths": [
-    "${workspaceFolder}\\.venv\\Lib\\site-packages"
-  ]
+  "pylance.analysis.typeCheckingMode": "off",
+  "pylance.analysis.diagnosticMode": "workspace"
 }
